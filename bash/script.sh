@@ -30,7 +30,7 @@ _EOF
 
 (( $# < 1 )) && {
     help
-    exit 0
+    exit 126
 }
 
 case "$1" in
