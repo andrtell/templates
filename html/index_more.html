@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- 
+  The 'lang' attribute helps define the language of an element: the language 
+  that non-editable elements are written in, or the language that the editable 
+  elements should be written in by the user. 
+-->
+<html lang="en">
+  <head>
+    <!-- 
+      The meta charset attribute declares the document's character encoding. 
+      If the attribute is present, its value must be an ASCII case-insensitive 
+      match for the string "utf-8", because UTF-8 is the only valid encoding for 
+      HTML5 documents.
+    -->
+    <meta charset="utf-8">
+
+    <title>An example HTML5 page</title>
+
+    <!-- 
+      Use custom meta tags to store document data.
+    -->
+    <meta name="google-analytics" content="1-AHFKALJ">
+
+    <!--
+      The <meta name="description" content="..."> tag MAY in some situations be 
+      used as the snippet shown in search results.
+    -->
+    <meta name="description" content="This is an example HTML5 page.">
+
+    <!--
+      The meta viewport attribute control the page's dimensions and scaling. 
+
+      Using the meta viewport value 'width=device-width' instructs the page to 
+      match the screen's width in device-independent pixels (dp). 
+
+      As dp is a physical unit it has an absolute value which can be measured in 
+      traditional units, e.g. for Android devices 1 dp equals 1/160 of inch or 
+      0.15875 mm.
+
+      The meta viewport value 'initial-scale=1' establish a 1:1 relationship 
+      between CSS pixels and device-independent pixels regardless of device 
+      orientation, and allows the page to take advantage of the full landscape 
+      width.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--
+      Open Graph meta tags are snippets of code that control how URLs are 
+      displayed when shared on social media. Without these Open Graph tags, the 
+      Facebook Crawler uses internal heuristics to make a best guess about the 
+      title, description, and preview image for your content.
+
+      See: https://ogp.me/
+      See: https://developers.facebook.com/docs/sharing/webmasters/
+    -->
+    <!-- Required open graph 'properties' -->
+    <meta property="og:image"       content="">
+    <meta property="og:title"       content="">
+    <meta property="og:type"        content="">
+    <meta property="og:url"         content="">
+    <!-- There are many more optional og 'properties'  -->
+    <meta property="og:site_name"   content="">
+    <meta property="og:description" content="">
+    <meta property="og:locale"      content="">
+    <meta property="og:video"       content="">
+    <!-- And so on ... -->
+
+    <!--
+      The rel=icon linked resource represents the icon, a resource for 
+      representing the page in the user interface, for the current document. 
+
+      If there are multiple <link rel="icon">s, the browser uses their media 
+      attribute, type, and sizes attributes to select the most appropriate icon. 
+
+      If several icons are equally appropriate, the LAST ONE is used. 
+    -->
+    <link rel="icon"             href="/favicon.ico" sizes="any">
+    <link rel="icon"             href="/icon.svg"    type="image/svg+xml">
+    <!--
+      Apple's iOS does not use this link type.
+      Instead use 'apple-touch-icon' and 'apple-touch-startup-image'.
+    -->
+    <link rel="apple-touch-icon" href="icon-iphone.png">
+
+    <!-- Page stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--
+      Progressive web app (PWA), are websites that can be installed to a 
+      device’s homescreen without an app store.
+
+      See: https://web.dev/learn/pwa/
+
+      The web app manifest provides information about a PWA.
+
+      See: https://developer.mozilla.org/en-US/docs/Web/Manifest
+
+      Requires the use of the CORS protocol for cross-origin fetching.
+    -->
+    <link rel="manifest" href="site.webmanifest">
+
+    <!--
+      The theme-color value for the name attribute of the <meta> element 
+      indicates a suggested color that user agents should use to customize the 
+      display of the page or of the surrounding user interface. 
+
+      If specified, the content attribute must contain a valid CSS color.
+
+      Chrome, Edge uses the color only on installed progressive web apps.
+    -->
+    <meta name="theme-color" content="#fafafa">
+  </head>
+  <body>
+    <script src="app.js"></script>
+  </body>
+</html>
