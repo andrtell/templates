@@ -1,0 +1,1 @@
+{Task, fn -> run() end}

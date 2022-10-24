@@ -1,0 +1,3 @@
+Task.Supervisor.start_child(MyApp.TaskSupervisor, fn ->
+  IO.puts "OK"
+end)

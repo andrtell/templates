@@ -1,0 +1,1 @@
+{DynamicSupervisor, name: MyApp.DynamicSupervisor}
